@@ -1,146 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Febin George | Software Engineer</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-            color: #333;
-        }
-        header {
-            background: #0a2540;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px;
-        }
-        h2 {
-            color: #0a2540;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        ul {
-            line-height: 1.8;
-        }
-        .skills span {
-            display: inline-block;
-            background: #e1e8f0;
-            padding: 8px 12px;
-            margin: 6px;
-            border-radius: 6px;
-        }
-        footer {
-            background: #0a2540;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-        }
-        a {
-            color: #0a2540;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Febin E J | Senior Software Engineer</title>
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    header a {
+      color: #93c5fd;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .card {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .skill {
+      background: #eef2ff;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-align: center;
+      color: #1e40af;
+    }
+
+    .projects li {
+      margin-bottom: 16px;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Febin George</h1>
-    <p>Senior Software Engineer | Java | Spring Boot | Distributed Systems</p>
-    <p>
-        <a href="https://github.com/febingeorge" style="color:#fff;">GitHub</a> |
-        <a href="https://www.linkedin.com" style="color:#fff;">LinkedIn</a>
-    </p>
+  <h1>Febin George</h1>
+  <p>Senior Software Engineer | Java | Spring Boot | Distributed Systems</p>
+  <p>
+    <a href="https://github.com/Febin1990" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </p>
 </header>
 
 <section>
-    <h2>About Me</h2>
+  <span class="badge">ABOUT ME</span>
+  <div class="card">
     <p>
-        I am a results-driven Software Engineer with 7+ years of experience in
-        designing, developing, and supporting enterprise backend systems.
-        I specialize in Java, Spring Boot, PostgreSQL, messaging systems,
-        and production support for large-scale applications.
+      I am a results-driven Senior Software Engineer with <strong>7+ years of experience</strong>
+      in building and supporting enterprise-grade backend systems.
+      I specialize in <strong>Java, Spring Boot, PostgreSQL, messaging systems,
+      and distributed caching</strong>, with strong production-support expertise.
     </p>
+    <p>
+      Currently seeking <strong>international opportunities</strong> where I can
+      contribute to scalable systems and grow within a global engineering culture.
+    </p>
+  </div>
 </section>
 
 <section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Java</span>
-        <span>Spring Boot</span>
-        <span>Spring Cloud</span>
-        <span>Spring Security</span>
-        <span>PostgreSQL</span>
-        <span>MySQL</span>
-        <span>RabbitMQ</span>
-        <span>ActiveMQ</span>
-        <span>Hazelcast</span>
-        <span>Docker</span>
-        <span>Jenkins</span>
-        <span>Prometheus</span>
-        <span>Grafana</span>
-        <span>ELK Stack</span>
-        <span>Azure</span>
-    </div>
+  <span class="badge">TECHNICAL SKILLS</span>
+  <div class="card skills">
+    <div class="skill">Java</div>
+    <div class="skill">Spring Boot</div>
+    <div class="skill">Spring Cloud</div>
+    <div class="skill">Spring Security</div>
+    <div class="skill">PostgreSQL</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">RabbitMQ</div>
+    <div class="skill">ActiveMQ</div>
+    <div class="skill">Hazelcast</div>
+    <div class="skill">Docker</div>
+    <div class="skill">Jenkins</div>
+    <div class="skill">Prometheus</div>
+    <div class="skill">Grafana</div>
+    <div class="skill">ELK Stack</div>
+    <div class="skill">Azure</div>
+  </div>
 </section>
 
 <section>
-    <h2>Experience</h2>
+  <span class="badge">EXPERIENCE</span>
+  <div class="card">
+    <h3>R&D Software Developer & Technical Support Engineer</h3>
     <ul>
-        <li>
-            <strong>R&D Software Developer & Technical Support Engineer</strong><br>
-            Designed and maintained enterprise-grade backend services using Java and Spring Boot.
-            Supported production systems, analyzed CPU/memory issues, optimized PostgreSQL queries,
-            and implemented distributed caching using Hazelcast.
-        </li>
+      <li>Designed and maintained scalable backend services using Java and Spring Boot.</li>
+      <li>Handled production incidents involving CPU spikes, memory leaks, and DB bottlenecks.</li>
+      <li>Optimized PostgreSQL queries and indexing for high-traffic applications.</li>
+      <li>Implemented distributed caching using Hazelcast to reduce DB load.</li>
+      <li>Built CI/CD pipelines with Jenkins and containerized apps using Docker.</li>
     </ul>
+  </div>
 </section>
 
 <section>
-    <h2>Key Projects</h2>
+  <span class="badge">KEY PROJECTS</span>
+  <div class="card projects">
     <ul>
-        <li>
-            <strong>Enterprise Backend Platform</strong><br>
-            Spring Boot microservices, PostgreSQL optimization, REST APIs, and Spring Security.
-        </li>
-        <li>
-            <strong>Messaging & Queue Monitoring</strong><br>
-            RabbitMQ-based async processing with Prometheus & Grafana monitoring.
-        </li>
-        <li>
-            <strong>Distributed Cache Integration</strong><br>
-            Hazelcast cluster setup to reduce database load and improve response time.
-        </li>
+      <li><strong>Enterprise Backend Platform</strong> – Spring Boot microservices, REST APIs, Spring Security.</li>
+      <li><strong>Messaging & Queue Monitoring</strong> – RabbitMQ with Prometheus & Grafana monitoring.</li>
+      <li><strong>Distributed Cache Integration</strong> – Hazelcast cluster improving response time.</li>
     </ul>
+  </div>
 </section>
 
 <section>
-    <h2>Career Objective</h2>
+  <span class="badge">CAREER OBJECTIVE</span>
+  <div class="card">
     <p>
-        Seeking international opportunities where I can contribute my expertise in
-        backend development, distributed systems, and DevOps while growing in a
-        global engineering environment.
+      To secure a challenging software engineering role abroad where I can leverage
+      my backend expertise, contribute to scalable platforms, and grow professionally
+      in an international environment.
     </p>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>
-        📍 India (Open to Relocation)<br>
-        📧 Email: your.email@example.com
-    </p>
+  </div>
 </section>
 
 <footer>
-    © 2026 Febin George | GitHub Pages Portfolio
+  © 2026 Febin George • GitHub Pages Portfolio
 </footer>
 
 </body>
